@@ -7,6 +7,7 @@ body {
   background-color: rgb(229, 255, 226);
   font-size: 20px;
   justify-content: center;
+  color: black;
 }
 
 header {
@@ -17,8 +18,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
+  display: flex;
 }
 
 li {

@@ -15,7 +15,7 @@ const clients = getClientsList();
 
 const ShowClientsList: React.FC = () => {
   return (
-    <div>
+    <section>
       <h1>Liste des clients</h1>
       <div className="card-container">
         {clients.map((client, idx) => (
@@ -26,7 +26,7 @@ const ShowClientsList: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

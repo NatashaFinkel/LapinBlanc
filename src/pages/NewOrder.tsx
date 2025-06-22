@@ -5,19 +5,19 @@ type Client = {
   clientName: string;
 };
 
-type Product = {
-  productName: string;
-};
-
 type Order = {
-  Name: Client;
-  productName: Product;
+  name: string;
+  productName: string;
   quantity: number;
 };
 
 const getClientsList = (): Client[] => {
   const data = localStorage.getItem("clientsList");
-  return data ? JSON.parse(data) : [];
+  const clients = data ? JSON.parse(data) : [];
+  return clients.map((client: { clientName: string }) => {
+    console.log(client.clientName);
+    return { clientName: client.clientName };
+  });
 };
 
 const getOrdersList = (): Order[] => {
@@ -42,16 +42,9 @@ const NewOrder: React.FC = () => {
   const handleSubmitNewOrder = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const clientObj = clients.find((c) => c.clientName === selectedClient);
-    if (!clientObj) return;
-    console.log(clientObj);
-
-    const productObj = products.find((c) => c.productName === selectedProduct);
-    if (!productObj) return;
-
     const newOrder: Order = {
-      Name: clientObj,
-      productName: productObj,
+      name: selectedClient,
+      productName: selectedProduct,
       quantity: quantity,
     };
 

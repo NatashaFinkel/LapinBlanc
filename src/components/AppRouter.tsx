@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header.js";
-import OrdersList from "../pages/OrdersList.tsx";
+import OrdersList from "../pages/ListOfOrders.tsx";
 import NewOrder from "../pages/NewOrder.tsx";
-import CreateClient from "../pages/CreateClient.tsx";
-import ShowClientsList from "../pages/ShowClientsList.tsx";
+import CreateClient from "../pages/NewClient.tsx";
+import ShowClientsList from "../pages/ListOfClients.tsx";
 
 const AppRouter = () => {
   return (

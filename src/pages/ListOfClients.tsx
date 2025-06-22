@@ -20,7 +20,7 @@ const ShowClientsList: React.FC = () => {
         {clients.map((client, idx) => (
           <div className="card" key={idx}>
             <h2>{client.clientName}</h2>
-            <p>{client.phone}</p>
+            <p>{client.phone.replace(/(.{2})/g, "$1 ").trim()}</p>
           </div>
         ))}
       </div>

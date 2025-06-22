@@ -1,23 +1,23 @@
 [
     {
-        "pain au levain": 0
+        "productName": "pain au levain"
     },
     {
-        "galettes": 0
+        "productName": "galette"
     },
     {
-        "pain aux raisins": 0
+        "productName": "pain aux raisins"
     },
     {
-        "croissants": 0
+        "productName": "croissant"
     },
     {
-        "pain au chocolat": 0
+        "productName": "pain au chocolat"
     },
     {
-        "pain au petit épeautre sans sel": 0
+        "productName": "pain au petit épeautre sans sel"
     },
     {
-        "pain aux graines": 0
+        "productName": "pain aux graines"
     }
 ]

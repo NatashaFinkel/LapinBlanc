@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
+import type { Name } from "../typeScript/Name";
+import type { Order } from "../typeScript/Order";
 import products from "../json/products.json";
 
-type Client = {
-  clientName: string;
-};
-
-type Order = {
-  name: string;
-  productName: string;
-  quantity: number;
-};
-
-const getClientsList = (): Client[] => {
+const getClientsList = (): Name[] => {
   const data = localStorage.getItem("clientsList");
   const clients = data ? JSON.parse(data) : [];
   return clients.map((client: { clientName: string }) => {
@@ -30,7 +22,7 @@ const setOrdersList = (list: Order[]) => {
 };
 
 const NewOrder: React.FC = () => {
-  const [clients, setClients] = useState<Client[]>([]);
+  const [clients, setClients] = useState<Name[]>([]);
   const [selectedClient, setSelectedClient] = useState<string>("");
   const [selectedProduct, setSelectedProduct] = useState<string>("");
   const [quantity, setQuantity] = useState<number>(1);

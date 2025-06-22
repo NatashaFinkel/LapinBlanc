@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import AppInput from "../components/AppInput";
-
-type Client = {
-  clientName: string;
-  phone: string;
-};
+import type { Client } from "../typeScript/Client";
 
 const getClientsList = (): Client[] => {
   const data = localStorage.getItem("clientsList");

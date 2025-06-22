@@ -1,9 +1,5 @@
 import React from "react";
-
-type Client = {
-  clientName: string;
-  phone: string;
-};
+import type { Client } from "../typeScript/Client";
 
 const getClientsList = (): Client[] => {
   const data = localStorage.getItem("clientsList");

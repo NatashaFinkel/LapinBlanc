@@ -1,10 +1,5 @@
 import React from "react";
-
-type Order = {
-  name: string;
-  quantity: number;
-  productName: string;
-};
+import type { Order } from "../typeScript/Order";
 
 const getOrdersList = (): Order[] => {
   const data = localStorage.getItem("ordersList");

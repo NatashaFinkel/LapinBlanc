@@ -105,3 +105,8 @@ form {
 .card p {
   margin: 10px 0px;
 }
+
+.product-span {
+  border: solid 1px black;
+  padding: 10px;
+}

@@ -9,6 +9,9 @@ function Header() {
           <li>
             <a href="/nouveau-client">Ajouter un client</a>
           </li>
+          <li>
+            <a href="/nouvelle-commande">Nouvelle commande</a>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,11 +1,8 @@
+import AppRouter from "./components/AppRouter";
 import "./style/App.css";
 
 function App() {
-  return (
-    <>
-      <div className="fragment-1">Fragment 1</div>
-    </>
-  );
+  return <AppRouter />;
 }
 
 export default App;

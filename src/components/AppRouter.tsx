@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header.js";
+import OrdersList from "../pages/OrdersList.tsx";
 import NewOrder from "../pages/NewOrder.tsx";
 import CreateClient from "../pages/CreateClient.tsx";
 import ShowClientsList from "../pages/ShowClientsList.tsx";
@@ -14,8 +15,9 @@ const AppRouter = () => {
     >
       <Header />
       <Routes>
-        <Route path="/" element={<NewOrder />} />
-          <Route path="/nouvelle-commande" element={<NewOrder />} />
+        <Route path="/" element={<OrdersList />} />
+        <Route path="/toutes-les-commandes" element={<OrdersList />} />
+        <Route path="/nouvelle-commande" element={<NewOrder />} />
         <Route path="/nouveau-client" element={<CreateClient />} />
         <Route path="/tout-les-clients" element={<ShowClientsList />} />
       </Routes>

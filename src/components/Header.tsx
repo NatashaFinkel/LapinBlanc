@@ -12,6 +12,9 @@ function Header() {
           <li>
             <a href="/nouvelle-commande">Nouvelle commande</a>
           </li>
+          <li>
+            <a href="/toutes-les-commandes">Toutes les commandes</a>
+          </li>
         </ul>
       </nav>
     </header>

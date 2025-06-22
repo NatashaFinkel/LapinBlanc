@@ -41,7 +41,7 @@ const CreateClient: React.FC = () => {
 
   return (
     <section>
-      <h2>Ajouter un nouveau client</h2>
+      <h1>Ajouter un nouveau client</h1>
       <form id="create-new-client" onSubmit={handleSubmit}>
         <AppInput
           inputHtmlFor="client-first-name"

@@ -73,9 +73,7 @@ const NewOrder: React.FC = () => {
             ))}
           </select>
           <span className="product-span">
-            <label htmlFor="product-quantity" style={{ marginTop: "1rem" }}>
-              Quantité :
-            </label>
+            <label htmlFor="product-quantity">Quantité :</label>
             <input
               id="product-quantity"
               type="number"
@@ -84,7 +82,6 @@ const NewOrder: React.FC = () => {
               onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
               style={{ marginLeft: "0.5rem", width: "70px" }}
             />
-
             <label htmlFor="product">Produit :</label>
             <select
               id="product"

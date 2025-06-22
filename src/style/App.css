@@ -107,13 +107,14 @@ form {
   margin: 10px 0px;
 }
 
-.product-span, .order-item {
+.product-span,
+.order-item {
   border: solid 1px black;
   padding: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .order-item {
-  display: flex;
   gap: 5px;
-
 }

@@ -82,7 +82,7 @@ const CreateClient: React.FC = () => {
           inputValue={phone}
           inputOnChange={(e) => setPhone(e.target.value)}
         />
-        <button type="submit">Ajouter ce client</button>
+        <button type="submit" className="btn">Ajouter ce client</button>
       </form>
     </section>
   );

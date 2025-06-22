@@ -6,6 +6,8 @@ body {
   min-height: 100vh;
   background-color: rgb(229, 255, 226);
   font-size: 20px;
+  justify-content: center;
+}
 
 header {
   justify-items: center;
@@ -43,6 +45,8 @@ li a:active {
 h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
+  margin: 50px 0px;
 }
 
 h1,
@@ -66,6 +70,21 @@ form,
 
 form {
   gap: 20px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  border: none;
+  box-shadow: 5px 7px 3px #888888;
+  color: white;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #06ca83;
+  box-shadow: 5px 7px 3px #a2a2a2;
 }
 
 .div-2 {

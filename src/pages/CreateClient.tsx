@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import AppInput from "../components/AppInput";
 
 type Client = {
-  Client: string;
-  Adresse: string;
-  Téléphone: string;
+  clientName: string;
+  phone: string;
 };
 
 const getClientsList = (): Client[] => {
@@ -19,23 +18,20 @@ const setClientsList = (list: Client[]) => {
 const CreateClient: React.FC = () => {
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
-  const [adress, setAdress] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const newClient: Client = {
-      Client: `${firstName} ${lastName}`,
-      Adresse: adress,
-      Téléphone: phone,
+      clientName: `${firstName} ${lastName}`,
+      phone: phone,
     };
 
     const updatedList = [...getClientsList(), newClient];
     setClientsList(updatedList);
     setFirstName("");
     setLastName("");
-    setAdress("");
     setPhone("");
   };
 
@@ -61,16 +57,6 @@ const CreateClient: React.FC = () => {
           inputName="client-last-name"
           inputValue={lastName}
           inputOnChange={(e) => setLastName(e.target.value)}
-        />
-
-        <AppInput
-          inputHtmlFor="adress"
-          inputLabelTxt="Addresse"
-          inputType="text"
-          inputId="adress"
-          inputName="adress"
-          inputValue={adress}
-          inputOnChange={(e) => setAdress(e.target.value)}
         />
 
         <AppInput

@@ -1,9 +1,8 @@
 import React from "react";
 
 type Client = {
-  Client: string;
-  Adresse: string;
-  Téléphone: string;
+  clientName: string;
+  phone: string;
 };
 
 const getClientsList = (): Client[] => {
@@ -20,9 +19,8 @@ const ShowClientsList: React.FC = () => {
       <div className="card-container">
         {clients.map((client, idx) => (
           <div className="card" key={idx}>
-            <h2>{client.Client}</h2>
-            <p>{client.Adresse}</p>
-            <p>{client.Téléphone}</p>
+            <h2>{client.clientName}</h2>
+            <p>{client.phone}</p>
           </div>
         ))}
       </div>

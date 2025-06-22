@@ -4,7 +4,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/tous les clients">
+            <a href="/tout-les-clients">
               Tous les clients
             </a>
           </li>

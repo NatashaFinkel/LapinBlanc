@@ -15,7 +15,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<CreateClient />} />
         <Route path="/nouveau-client" element={<CreateClient />} />
-        <Route path="/tous les clients" element={<ShowClientsList />} />
+        <Route path="/tout-les-clients" element={<ShowClientsList />} />
       </Routes>
     </Router>
   );
